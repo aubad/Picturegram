@@ -1,0 +1,49 @@
+In Assignment2 
+I couldn't post new comments on the website.The issue was fixed using the method Post
+before the form block. 
+The text on top of the background image of the navbar in posts.php was generic. Customised texts and dates
+according to each posts were added.
+The php code lacked comments. Comments were added to increase the understandability of the code
+The posts and comments were in ascending. The issue was fixed by ordering the date of the posts
+and comments in descending order.
+
+Database
+Name: picturegram
+The picturegram db contains 4 tables.
+posts(Table)
+Number of atrributes:5
+attributes: PostID, UserID, PostImage,Post,Date(Y-M-d-Time)
+Primary Key;PostID
+Foreign Key:UserID
+
+comments(Table)
+Number of atrributes:5
+attributes:CommentID,UserID, PostID,Comment,Date(Y-M-d-Time)
+Primary Key:CommentID
+Foreign Key:UserID,PostID
+
+users
+Number of atrributes:4
+attrbutes:UserID,Name,About,AboutImage
+Primary Key:UserID
+Foreign Key:No Foreign Keys
+
+about
+Number of atrributes:3
+attributes:ID,ImageName,Description
+Primary Key:ID
+Foreign Key:None
+
+Search Implementation
+1.Connection to db is established
+2.Sql query is writen and passed on to retrieve appropiate data from tables
+3.Data is fetched using in an associated arrray
+4.Data is printed or echoed from the associated array
+5.Step 4 is repeated using a while loop until the end of the array is reached
+6.connection is closed
+
+In case of insertions after step 1
+2.User Input in retrieved using Post
+3.The user input is passed using approriate sql query.
+4.Error messages are printed if the data cannot be inserted
+5.Connection is closed

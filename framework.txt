@@ -1,0 +1,5 @@
+Added prepared statements to all the pages. All the current sql queries are prepared statements
+Added password hashing to createAccount.php
+Added verification of hashed password to login.php
+Added regex statement to check patterns in password.The user is not allowed to create an
+account if the password is not followed
